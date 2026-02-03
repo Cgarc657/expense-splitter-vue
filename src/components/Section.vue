@@ -22,7 +22,7 @@
 section h3 {
     margin: 0 0 6px;
     font-size: 14px;
-    color: #4f46e5;
+    color: #000000;
 
 }
 </style>
