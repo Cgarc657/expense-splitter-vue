@@ -1,6 +1,7 @@
 <script setup>
   import Header from './components/Header.vue';
   import Card from './components/Card.vue';
+  import Section from './components/Section.vue';
   
 </script>
 
@@ -11,32 +12,31 @@
             <input id="personInput" type="text" placeholder="Add person name"/>
             <button>Add Person</button>
         </form>
-        <form id="expenseForm" class="rowForm">
+        <form id="expenseForm" class="rowFo
+        rm">
             <input id="descInput" type="text" placeholder="Expense Description"/>
             <input id="amountInput" type="number" placeholder="Amount" />
             <select id="paidBySelect"></select>
             <button>Add Expense</button>
         </form>
-        <section>
-            <h3>People</h3>
-            <ul id="peopleList" class="list"></ul>
-        </section>
+        
+        <Section title="People">
+          <ul id="peopleList" class="list"></ul> 
+        </Section>
 
-        <section>
-            <h3>Expenses</h3>
+        <Section title="Expenses">
             <ul id="expenseList" class="list"></ul>
-        </section>
-        <section>
-            <h3>Total</h3>
+        </Section>
+
+        <Section title="Total">
             <p>
                 Total Spent: <strong id="totalSpent">$0.00</strong><br/>
                 Split per Person: <strong id="splitAmount">$0.00</strong>
             </p>
-        </section>
-        <section class="summary">
-            <h3>Summary</h3>
+        </Section>
+        <Section title="Summary">
             <ul id="summaryList" class="list"></ul>
-        </section>
+        </Section>
       </Card>
 </template>
 
